@@ -14,7 +14,7 @@ Three built-in profiles, selected at runtime over serial:
 
 | # | Chip family | Addr lines | Data lines | Size |
 |---|---|---|---|---|
-| 1 | 82S129 / 82S137-family bipolar PROM | 8 | 4 | 256×4 |
+| 1 | 82S129-family bipolar PROM | 8 | 4 | 256×4 |
 | 2 | 82S137-family bipolar PROM | 10 | 4 | 1024×4 |
 | 3 | 2732-family EPROM | 12 | 8 | 4K×8 |
 
