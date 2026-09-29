@@ -109,8 +109,4 @@ things aren't as expected, perhaps one line isn't properly connected.
   parts are tens to a couple hundred nanoseconds. Fine for chips this
   small (at most a few thousand addresses); worth shortening if you ever
   dump something much larger.
-- **Stale serial port config.** If a dump comes back as garbled binary
-  instead of clean `ADDR: DATA` text, it's almost always a leftover
-  terminal/port configuration from a previous session, not a hardware
-  fault. Re-open the port fresh (e.g. on Linux:
-  `stty -F /dev/ttyACMx 115200 raw -echo` before reconnecting).
+  
