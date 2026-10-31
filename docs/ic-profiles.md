@@ -17,33 +17,33 @@ chip permanently selected so the Arduino never has to drive an enable line.
 ```
               N82S129N
             ┌────┬──┬────┐
-      A5 ─1─┤●   ╰──╯  16├─ VCC  ─ 5V
-      A4 ─2─┤          15├─ A7   ─ D29
-      A3 ─3─┤          14├─ !CE1 ─ GND
-      A0 ─4─┤          13├─ !CE2 ─ GND
-      A1 ─5─┤          12├─ O1   ─ D34
-      A2 ─6─┤          11├─ O2   ─ D35
-     GND ─7─┤ GND      10├─ O3   ─ D36
-      A6 ─8─┤           9├─ O4   ─ D37
+      A6 ─1─┤●   ╰──╯  16├─ VCC  ─ 5V
+      A5 ─2─┤          15├─ A7   ─ D29
+      A4 ─3─┤          14├─ !CE2 ─ GND
+      A3 ─4─┤          13├─ !CE1 ─ GND
+      A0 ─5─┤          12├─ O1   ─ D34
+      A1 ─6─┤          11├─ O2   ─ D35
+      A2 ─7─┤          10├─ O3   ─ D36
+     GND ─8─┤ GND       9├─ O4   ─ D37
             └────────────┘
 ```
 
 | Pin | Signal | Connects to |
 |---|---|---|
-| 1 | A5 | D27 |
-| 2 | A4 | D26 |
-| 3 | A3 | D25 |
-| 4 | A0 | D22 |
-| 5 | A1 | D23 |
-| 6 | A2 | D24 |
-| 7 | GND | GND |
-| 8 | A6 | D28 |
+| 1 | A6 | D28 |
+| 2 | A5 | D27 |
+| 3 | A4 | D26 |
+| 4 | A3 | D25 |
+| 5 | A0 | D22 |
+| 6 | A1 | D23 |
+| 7 | A2 | D24 |
+| 8 | **GND** | **GND** |
 | 9 | O4 | D37 |
 | 10 | O3 | D36 |
 | 11 | O2 | D35 |
 | 12 | O1 | D34 |
-| 13 | !CE2 | GND |
-| 14 | !CE1 | GND |
+| 13 | !CE1 | GND |
+| 14 | !CE2 | GND |
 | 15 | A7 | D29 |
 | 16 | VCC | 5V |
 
@@ -65,8 +65,8 @@ Data nibble bit order: **bit0 = O1 (LSB) … bit3 = O4 (MSB)**.
       A0 ─5─┤          14├─ O1   ─ D34
       A1 ─6─┤          13├─ O2   ─ D35
       A2 ─7─┤          12├─ O3   ─ D36
-    !CE2 ─8─┤ GND      11├─ O4   ─ D37
-     GND ─9─┤          10├─ !CE1 ─ GND
+    !CE2 ─8─┤          11├─ O4   ─ D37
+     GND ─9─┤ GND      10├─ !CE1 ─ GND
             └────────────┘
 ```
 
